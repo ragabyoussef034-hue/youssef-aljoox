@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>يوسف رجب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- لو الـ JavaScript شغال بنفعّل أنيميشن الظهور، ولو لأ كل حاجة تفضل ظاهرة -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ========= شريط الأيقونات ========= -->
+  <nav class="dock" id="dock">
+    <a href="#hero"    class="dock-item c1" data-label="الرئيسية">🏠</a>
+    <a href="#intro"   class="dock-item c2" data-label="مين أنا">💬</a>
+    <a href="#cards"   class="dock-item c3" data-label="اللي بقدمه">🎯</a>
+    <a href="#skills"  class="dock-item c4" data-label="المجالات">⚡</a>
+    <a href="#hero"    class="dock-item c5" data-label="المشاريع">📁</a>
+    <a href="#contact" class="dock-item c6" data-label="تواصل">✉️</a>
+  </nav>
+
+  <!-- ========= 1) الهيرو ========= -->
+  <section class="hero-wrap" id="hero">
+
+    <div class="hero-card" id="heroCard">
+      <h1 class="name name-right" id="nameRight">يــوسـف</h1>
+      <div class="person" id="person">
+        <!-- صورتك. لو عندك نسخة PNG بخلفية شفافة سمّيها photo.png وغيّر الاسم هنا -->
+        <img src="photo.jpg" alt="يوسف رجب" width="720" height="930" />
+      </div>
+      <h1 class="name name-left" id="nameLeft">رجـــب</h1>
+      <button class="hero-pill">● ما بعمله</button>
+    </div>
+
+    <div class="hero-bottom">
+
+      <!-- كارت الأدوات -->
+      <div class="tools-card" id="toolsCard">
+        <div class="fan f1">⚛️</div>
+        <div class="fan f2">N</div>
+        <div class="fan f3">JS</div>
+        <div class="fan f4">🐘</div>
+        <div class="fan f5">☁️</div>
+        <div class="tools-body">
+          <h3>الأدوات اللي ببني بيها</h3>
+          <div class="tags">
+            <span>React</span><span>Node</span><span>Next.js</span><span>PostgreSQL</span><span>Cloudflare</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفولدرات -->
+      <div class="folder" data-open="projects">
+        <div class="f-tab">المقدمة</div>
+        <div class="f-paper">
+          <b>جوه الفولدر</b>
+          <ul><li>01 متجر إلكتروني</li><li>02 تطبيق مهام</li><li>03 موقع شركة</li></ul>
+        </div>
+        <div class="f-front">
+          <h3>المشاريع</h3>
+          <p>افتح الفولدر وشوف التفاصيل</p>
+        </div>
+      </div>
+
+      <div class="folder">
+        <div class="f-tab">حول مشاريعي</div>
+        <div class="f-paper">
+          <b>شغل بيتكلم</b>
+          <ul><li>ثقة وتسليم في الميعاد</li><li>تواصل مستمر</li><li>دعم بعد التسليم</li></ul>
+        </div>
+        <div class="f-front">
+          <h3>+20 شريك نجاح</h3>
+          <p>بنينا الثقة مشروع ورا مشروع</p>
+        </div>
+      </div>
+
+      <div class="folder">
+        <div class="f-tab">اكتشف المزيد</div>
+        <div class="f-paper">
+          <b>ابدأ دلوقتي</b>
+          <ul><li>فكرتك + شغلي = مشروع</li><li>كلمني على واتساب</li><li>الرد سريع</li></ul>
+        </div>
+        <div class="f-front">
+          <h3>عندك فكرة؟</h3>
+          <p>ابدأ مشروعك معانا</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========= 2) النص الكبير ========= -->
+  <section class="intro" id="intro">
+    <p class="big-text" id="bigText">
+      <span class="w">في</span> <span class="w">يوسف</span>
+      <i class="chip chip-black">N</i>
+      <span class="w">بنحوّل</span> <span class="w">الأفكار</span><br />
+      <span class="w">لتجارب</span> <span class="w">ويب</span>
+      <i class="chip chip-atom">⚛</i>
+      <span class="w">وتطبيقات</span>
+      <i class="chip chip-blue"></i>
+      <span class="w">ذكيّة،</span><br />
+      <span class="w">وأنظمة</span>
+      <i class="chip chip-zebra"></i>
+      <span class="w">تشتغل</span> <span class="w">معاك</span> <span class="w">وتكبر</span> <span class="w">بيك.</span>
+    </p>
+  </section>
+
+  <!-- ========= 3) أربع كروت بأيقونات 3D ========= -->
+  <section class="cards" id="cards">
+    <article class="card tilt">
+      <div class="icon3d i-black"><b>N</b></div>
+      <h3>ويب يليق بفكرتك</h3>
+      <p>مواقع ومنصات سريعة، من أول زيارة لآخر خطوة، بتجربة واضحة وتفاصيل تخلي الاستخدام أسهل.</p>
+    </article>
+    <article class="card tilt">
+      <div class="icon3d i-atom"><b>⚛</b></div>
+      <h3>كل جزء في مكانه.</h3>
+      <p>واجهات متراطبة وقابلة للتطوير، ورا التعقيد كود نضيف، عشان اللي قدامك يبقى بسيط.</p>
+    </article>
+    <article class="card tilt">
+      <div class="icon3d i-wave"></div>
+      <h3>تجربة تتحس.</h3>
+      <p>تطبيقات تجمع التصميم والحركة والاستدامة، وتخلّي كل تفاعل مفهوم وطبيعي.</p>
+    </article>
+    <article class="card tilt">
+      <div class="icon3d i-zebra"></div>
+      <h3>جاهز للي جاي.</h3>
+      <p>أنظمة واضحة ترتبط بشغلك وتتحقق أفكارك بنية قادرة تتطور مع احتياجك.</p>
+    </article>
+  </section>
+
+  <!-- ========= 4) القائمة الداكنة ========= -->
+  <section class="skills" id="skills">
+    <ul class="skill-list" id="skillList">
+      <li><span class="g g-w">W</span><div><h4>ويب</h4><small>تطوير الويب</small></div></li>
+      <li><span class="g g-a">A</span><div><h4>أوتوميشن</h4><small>الأتمتة</small></div></li>
+      <li><span class="g g-h">H</span><div><h4>هاي بيرفورمانس</h4><small>الأداء العالي</small></div></li>
+      <li><span class="g g-b">B</span><div><h4>بيلد</h4><small>بناء الحلول</small></div></li>
+      <li><span class="g g-ai">A</span><div><h4>إيه آي</h4><small>الذكاء الاصطناعي</small></div></li>
+    </ul>
+  </section>
+
+  <!-- ========= صفحة: ليه نضيع وقت؟ ========= -->
+  <section class="why" id="why">
+    <canvas id="whyCanvas"></canvas>
+    <h2 class="why-text">
+      <span class="ww" style="--i:0">ليه</span>
+      <span class="ww" style="--i:1">نضيع</span>
+      <span class="ww" style="--i:2">وقت؟</span>
+    </h2>
+  </section>
+
+  <!-- ========= 5) تواصل ========= -->
+  <section class="contact" id="contact">
+    <h2 class="contact-name magnet" id="contactName">يــوسـف رجـــب</h2>
+    <p class="contact-sub">كلمني وخلينا نبدأ مشروعك</p>
+
+    <div class="contact-grid">
+
+      <a class="social wa" href="https://wa.me/201109155151" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
+        <h3>واتساب</h3>
+        <span class="num">01109155151</span>
+      </a>
+
+      <!-- غيّر الرابط برابط صفحتك -->
+      <a class="social fb" href="https://www.facebook.com/share/1Cq7zfdAWd/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        <h3>فيسبوك</h3>
+        <span class="num">صفحتي على فيسبوك</span>
+      </a>
+
+      <!-- غيّر الرابط برابط حسابك -->
+      <a class="social tt" href="https://www.tiktok.com/@youssefragab896" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.7a5 5 0 0 1-3.9-4.4V2h-3.4v13.4a2.9 2.9 0 1 1-2-2.8V9.1a6.3 6.3 0 1 0 5.4 6.2V8.8a8.3 8.3 0 0 0 4.8 1.5V6.9a5 5 0 0 1-.9-.2z"/></svg>
+        <h3>تيك توك</h3>
+        <span class="num">@youssefragab896</span>
+      </a>
+
+    </div>
+
+    <p class="copy">© 2026 يوسف رجب</p>
+  </section>
+
+  <!-- ========= نافذة المشاريع (الفولدر الأسود) ========= -->
+  <div class="modal" id="projectsModal" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-tab">المشاريع</div>
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
+
+      <div class="proj-grid">
+        <!-- ضيف مشاريعك هنا: انسخ كارت وغيّر الاسم والوصف والرابط -->
+        <a class="proj" href="#" target="_blank">
+          <div class="proj-thumb p1"></div>
+          <h4>متجر إلكتروني</h4>
+          <p>React · Node.js</p>
+        </a>
+        <a class="proj" href="#" target="_blank">
+          <div class="proj-thumb p2"></div>
+          <h4>تطبيق إدارة مهام</h4>
+          <p>JavaScript · Firebase</p>
+        </a>
+        <a class="proj" href="#" target="_blank">
+          <div class="proj-thumb p3"></div>
+          <h4>موقع شركة</h4>
+          <p>HTML · CSS · JS</p>
+        </a>
+        <a class="proj" href="#" target="_blank">
+          <div class="proj-thumb p4"></div>
+          <h4>لوحة تحكم</h4>
+          <p>Next.js · PostgreSQL</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
